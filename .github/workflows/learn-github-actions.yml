@@ -9,8 +9,5 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '20'
-      - run: choco install cmake
-      - run: choco install visualcppbuildtools
-      - run: npm install -g bats
-      - run: bats -v
-      - run: cmd.exe /C echo hello
+      - run: cmake .
+      - run: cmake --build .
