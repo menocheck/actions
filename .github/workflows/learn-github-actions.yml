@@ -9,6 +9,6 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '20'
-      - run: cmake -G "Visual Studio 15 2017" -A Win32 -S .
+      - run: cmake -G "Visual Studio 16 2019" -A Win32 -S .
       - run: cmake --build .
       - run: .\hello-cmake.exe
