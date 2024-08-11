@@ -11,4 +11,4 @@ jobs:
           node-version: '20'
       - run: cmake -G "Visual Studio 16 2019" -A Win32 -S .
       - run: cmake --build .
-      - run: .\hello-cmake.exe
+      - run: .\Debug\hello-cmake.exe
